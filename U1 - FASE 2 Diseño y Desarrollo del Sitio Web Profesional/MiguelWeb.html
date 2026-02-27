@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Nova Flores - Abogado</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="#inicio">Miguel Nova Flores</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: INICIO / HOME -->
+        <section id="inicio" class="section inicio">
+            <div class="container">
+                <div class="inicio-content">
+                    <div class="inicio-texto">
+                        <h1>Miguel Nova Flores</h1>
+                        <h2>Abogado especialista en Derecho Civil, Penal y Laboral</h2>
+                        <p class="propuesta-valor">Asesoramiento jurídico claro, cercano y preventivo. Te acompaño no solo en la defensa, sino también en la prevención de conflictos.</p>
+                        <div class="cta-buttons">
+                            <a href="#contacto" class="btn btn-primario">Consultame ahora</a>
+                            <a href="#sobre-mi" class="btn btn-secundario">Conoce más</a>
+                        </div>
+                        <!-- Frase para animación JS -->
+                        <p class="frase-destacada">"Compromiso, claridad y trato humano para que te sientas acompañado y comprendido"</p>
+                    </div>
+                    <div class="inicio-imagen">
+                        <!-- Foto profesional -->
+                        <img src="Miguel.jpeg" alt="Miguel Nova - Abogado" class="foto-perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE MÍ -->
+        <section id="sobre-mi" class="section sobre-mi">
+            <div class="container">
+                <h2 class="section-titulo">Sobre mí</h2>
+                <div class="sobre-mi-content">
+                    <div class="sobre-mi-texto">
+                        <p class="biografia">Soy Miguel Angel Nova Flores, abogado titulado, actualmente iniciando mi ejercicio profesional independiente. Mi enfoque está en brindar un servicio jurídico cercano, transparente y accesible, donde el cliente sea lo más importante.</p>
+                        <p>Durante mi formación universitaria participé activamente en clínicas legales, análisis de casos prácticos y simulaciones de audiencias, lo que me permitió desarrollar habilidades en argumentación jurídica, análisis normativo y redacción técnica.</p>
+                        
+                        <div class="estudios">
+                            <h3><i class="fas fa-graduation-cap"></i> Estudios</h3>
+                            <ul>
+                                <li><strong>Título de Abogado</strong> - Universidad Privada Domingo Savio (UPDS)</li>
+                                <li><strong>Diplomado en Litigación Oral</strong> - Universidad Privada Domingo Savio (UPDS)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experiencia">
+                            <h3><i class="fas fa-briefcase"></i> Experiencia</h3>
+                            <ul>
+                                <li><strong>Clínicas legales universitarias</strong> - Participación activa (2023-2025)</li>
+                                <li><strong>Práctica en análisis de casos</strong> - Simulaciones de audiencias</li>
+                                <li><strong>Pasante</strong> - Estudio Jurídico "Vargas & Asociados"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: SERVICIOS -->
+        <section id="servicios" class="section servicios">
+            <div class="container">
+                <h2 class="section-titulo">Servicios</h2>
+                <p class="section-subtitulo">Ofrezco asesoramiento jurídico preventivo, redacción de documentos legales y patrocinio en procesos judiciales.</p>
+                
+                <div class="servicios-grid">
+                    <!-- Servicio 1 -->
+                    <div class="servicio-card">
+                        <div class="servicio-icono">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Asesoramiento preventivo</h3>
+                        <p>Orientación legal anticipada para evitar problemas futuros.</p>
+                        <div class="servicio-beneficio">
+                            <strong>Beneficio:</strong> Evitas conflictos antes de que ocurran
+                        </div>
+                        <button class="btn-ver-mas" data-servicio="1">Ver más <i class="fas fa-chevron-down"></i></button>
+                        <div class="servicio-detalle" id="detalle-1">
+                            <p>Te asesoro antes de tomar decisiones importantes: contratos, acuerdos, negociaciones. Así actuás con tranquilidad y seguridad legal.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="servicio-card">
+                        <div class="servicio-icono">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Redacción de documentos</h3>
+                        <p>Contratos, demandas, memoriales y escritos jurídicos.</p>
+                        <div class="servicio-beneficio">
+                            <strong>Beneficio:</strong> Documentos claros y técnicamente sólidos
+                        </div>
+                        <button class="btn-ver-mas" data-servicio="2">Ver más <i class="fas fa-chevron-down"></i></button>
+                        <div class="servicio-detalle" id="detalle-2">
+                            <p>Redacto todo tipo de documentos legales con precisión técnica pero en lenguaje comprensible para vos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="servicio-card">
+                        <div class="servicio-icono">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Patrocinio judicial</h3>
+                        <p>Representación legal en procesos civiles, penales y laborales.</p>
+                        <div class="servicio-beneficio">
+                            <strong>Beneficio:</strong> Defensa profesional en cada etapa
+                        </div>
+                        <button class="btn-ver-mas" data-servicio="3">Ver más <i class="fas fa-chevron-down"></i></button>
+                        <div class="servicio-detalle" id="detalle-3">
+                            <p>Te represento en tribunales, audiencias y todo el proceso judicial. Vas a estar acompañado en todo momento.</p>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="servicio-card">
+                        <div class="servicio-icono">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Orientación legal</h3>
+                        <p>Consultas y acompañamiento en temas cotidianos.</p>
+                        <div class="servicio-beneficio">
+                            <strong>Beneficio:</strong> Resolvés tus dudas con lenguaje claro
+                        </div>
+                        <button class="btn-ver-mas" data-servicio="4">Ver más <i class="fas fa-chevron-down"></i></button>
+                        <div class="servicio-detalle" id="detalle-4">
+                            <p>Consultas rápidas, orientación sobre tus derechos y obligaciones. Sin vueltas ni tecnicismos innecesarios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publico-objetivo">
+                    <h3>Público objetivo</h3>
+                    <div class="publico-items">
+                        <div class="publico-item">
+                            <i class="fas fa-user"></i>
+                            <span>Personas naturales</span>
+                            <p>Individuos que requieren orientación legal clara</p>
+                        </div>
+                        <div class="publico-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Emprendedores</span>
+                            <p>Asesoramiento para desarrollar actividades con tranquilidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: ÁREAS DE PRÁCTICA (PORTFOLIO) -->
+        <section id="areas" class="section areas">
+            <div class="container">
+                <h2 class="section-titulo">Áreas de práctica</h2>
+                <p class="section-subtitulo">Especializaciones en las que puedo asesorarte con compromiso y responsabilidad</p>
+                
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <div class="area-icono">
+                            <i class="fas fa-scale-balanced"></i>
+                        </div>
+                        <h3>Derecho Civil</h3>
+                        <p>Contratos, obligaciones, sucesiones, familia y responsabilidad civil.</p>
+                    </div>
+                    
+                    <div class="area-card">
+                        <div class="area-icono">
+                            <i class="fas fa-handcuffs"></i>
+                        </div>
+                        <h3>Derecho Penal</h3>
+                        <p>Defensa penal, querellas, delitos económicos y litigación oral.</p>
+                    </div>
+                    
+                    <div class="area-card">
+                        <div class="area-icono">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Derecho Laboral</h3>
+                        <p>Asesoramiento a trabajadores y empleadores, contratos, despidos y liquidaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: CONTACTO -->
+        <section id="contacto" class="section contacto">
+            <div class="container">
+                <h2 class="section-titulo">Contacto</h2>
+                <p class="section-subtitulo">¿Tenés una consulta? Escribime directamente. El contacto rápido es fundamental para mí.</p>
+                
+                <div class="contacto-grid">
+                    <div class="contacto-info">
+                        <h3>Datos de contacto</h3>
+                        
+                        <div class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp:</strong>
+                                <a href="https://wa.me/59173608092" target="_blank">+591-73608092</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <a href="miguelangelnovaflores909@gmail.com">miguelangelnovaflores909@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Ubicación: Calle Los Pozos #245, Edificio Santa Mónica, Oficina 3B, Santa Cruz de la Sierra, Bolivia</strong>
+                                <span>Santa Cruz de la Sierra, Bolivia</span>
+                            </div>
+                        </div>
+                        
+                        <div class="redes-sociales">
+                            <h4>Redes sociales</h4>
+                            <div class="redes-iconos">
+                                <a href="https://www.instagram.com/miguel_novaf?igsh=MXMzZnN4emE1ZnA2Yw=" target="_blank" class="red-social"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-formulario">
+                        <h3>Envíame un mensaje</h3>
+                        <form id="form-contacto">
+                            <div class="form-grupo">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            
+                            <div class="form-grupo">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-grupo">
+                                <label for="telefono">Teléfono (opcional)</label>
+                                <input type="tel" id="telefono" name="telefono">
+                            </div>
+                            
+                            <div class="form-grupo">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primario btn-enviar">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2026 Miguel Nova Flores - Abogado. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a> |
+                    <a href="#sobre-mi">Sobre mí</a> |
+                    <a href="#servicios">Servicios</a> |
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL (para cuando se envía el formulario) -->
+    <div id="modal-exito" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <i class="fas fa-check-circle modal-icono"></i>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Gracias por contactarme. Te responderé a la brevedad.</p>
+            <button class="btn btn-primario modal-btn">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
